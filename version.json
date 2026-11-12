@@ -1,6 +1,6 @@
 {
-  "versionCode": 15,
-  "versionName": "1.5.0",
+  "versionCode": 16,
+  "versionName": "1.6.0",
   "apkUrl": "https://raw.githubusercontent.com/Miidia/releases/main/miidia.apk",
-  "notes": "Versao atual."
+  "notes": "Teste de auto-atualizacao (1.6.0)."
 }
