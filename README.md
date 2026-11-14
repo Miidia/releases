@@ -173,7 +173,7 @@ Você **não precisa de computador, ADB, Shizuku nem Root**. Siga os **15 passos
 
 ## ❓ Perguntas Frequentes (FAQ)
 
-<details open>
+<details>
 <summary><b>Concluí a instalação, mas o Miidia não apareceu no Android Auto do meu carro. O que devo fazer?</b></summary>
 <br />
 
@@ -267,7 +267,7 @@ You **do not need a computer, ADB, Shizuku, or Root**. Carefully follow the **15
 
 ## ❓ Frequently Asked Questions (FAQ)
 
-<details open>
+<details>
 <summary><b>I completed the installation, but Miidia did not appear on my car's Android Auto screen. What should I do?</b></summary>
 <br />
 
@@ -361,7 +361,7 @@ Please follow these steps in order:
 
 ## ❓ Preguntas Frecuentes (FAQ)
 
-<details open>
+<details>
 <summary><b>Completé la instalación, pero Miidia no apareció en el Android Auto de mi coche. ¿Qué debo hacer?</b></summary>
 <br />
 
