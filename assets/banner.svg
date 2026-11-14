@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <defs>
+    <!-- Backgrounds -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0817"/>
+      <stop offset="55%" stop-color="#0E0B1E"/>
+      <stop offset="100%" stop-color="#140D2B"/>
+    </linearGradient>
+    <radialGradient id="glowPurple" cx="25%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="80%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Brand Logo Gradient -->
+    <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <!-- Pill / Accent Gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <!-- Card surface -->
+    <linearGradient id="screenSurface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111318"/>
+      <stop offset="100%" stop-color="#090A0D"/>
+    </linearGradient>
+    <!-- Tile Gradients from Miidia Home -->
+    <linearGradient id="ytGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3B2F"/>
+      <stop offset="100%" stop-color="#C50101"/>
+    </linearGradient>
+    <linearGradient id="stremioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#5B3FA8"/>
+    </linearGradient>
+    <linearGradient id="radioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B9BFF"/>
+      <stop offset="100%" stop-color="#0050DC"/>
+    </linearGradient>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2BC48A"/>
+      <stop offset="100%" stop-color="#0B7A55"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Main Canvas -->
+  <rect width="1200" height="520" rx="28" fill="url(#bgGrad)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#glowPurple)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#glowIndigo)"/>
+
+  <!-- Subtle Wave Lines (from Miidia Wave skin) -->
+  <g opacity="0.14" fill="none" stroke="#A855F7" stroke-width="1.2">
+    <path d="M-20 380 C200 320 380 460 620 410 S920 260 1220 330"/>
+    <path d="M-20 400 C200 340 380 480 620 430 S920 280 1220 350"/>
+    <path d="M-20 420 C200 360 380 500 620 450 S920 300 1220 370"/>
+    <path d="M-20 440 C200 380 380 520 620 470 S920 320 1220 390"/>
+  </g>
+
+  <!-- Border Frame -->
+  <rect x="1.5" y="1.5" width="1197" height="517" rx="26.5" fill="none" stroke="#2D2748" stroke-width="2"/>
+
+  <!-- LEFT COLUMN: Brand & Messaging -->
+  <g transform="translate(64, 68)">
+    <!-- App Icon + Brand Name -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="84" height="84" rx="22" fill="url(#logoGrad)"/>
+      <g fill="#FFFFFF" transform="translate(-4, -4) scale(0.85)">
+        <circle cx="33" cy="35.5" r="4.5"/>
+        <rect x="28.5" y="43.5" width="9" height="31" rx="4.5"/>
+        <circle cx="47" cy="35.5" r="4.5"/>
+        <rect x="42.5" y="43.5" width="9" height="31" rx="4.5"/>
+        <path d="M59.5 46v26L79 59z" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <text x="104" y="53" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#FFFFFF" letter-spacing="-1">Miidia</text>
+    
+    <!-- Version / Platform Pill -->
+    <rect x="262" y="24" width="138" height="32" rx="16" fill="#1E1836" stroke="#4C3B8A" stroke-width="1.2"/>
+    <circle cx="280" cy="40" r="4.5" fill="#7EE2B8"/>
+    <text x="292" y="45" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#DCD3FF">Android Auto</text>
+
+    <!-- Headline -->
+    <text x="0" y="142" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" letter-spacing="-0.6">
+      YouTube, Stremio, Rádio Ao Vivo
+    </text>
+    <text x="0" y="184" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#C4B5FD" letter-spacing="-0.6">
+      e Web na Tela do seu Carro.
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="226" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16.5" font-weight="500" fill="#B6B0CF">
+      Navegador de mídia completo com controle pelo celular, Virtual Cockpit,
+    </text>
+    <text x="0" y="250" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16.5" font-weight="500" fill="#B6B0CF">
+      ajuste fino de sincronia labial e ativação direta sem Root nem PC.
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 286)" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="164" height="38" rx="12" fill="#17132B" stroke="#352C5A" stroke-width="1.2"/>
+      <text x="82" y="24" fill="#E8EAED" text-anchor="middle">⚡ Sem Root / Sem PC</text>
+
+      <!-- Pill 2 -->
+      <rect x="176" y="0" width="170" height="38" rx="12" fill="#17132B" stroke="#352C5A" stroke-width="1.2"/>
+      <text x="261" y="24" fill="#E8EAED" text-anchor="middle">🎛️ Virtual Cockpit</text>
+
+      <!-- Pill 3 -->
+      <rect x="358" y="0" width="166" height="38" rx="12" fill="#17132B" stroke="#352C5A" stroke-width="1.2"/>
+      <text x="441" y="24" fill="#E8EAED" text-anchor="middle">🌐 PT · EN · ES</text>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <g transform="translate(0, 356)" font-family="system-ui, -apple-system, 'Segoe UI', monospace" font-size="13" fill="#8E87AB">
+      <text x="0" y="16">📦 com.miidia.auto  ·  🔒 Assinatura Oficial Verificada  ·  🔄 Auto-Update Integrado</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Car Head-Unit Mockup (Miidia Cluster Skin) -->
+  <g transform="translate(638, 56)" filter="url(#shadow)">
+    <!-- Car Display Bezel -->
+    <rect x="0" y="0" width="506" height="408" rx="26" fill="#050608" stroke="#2D3139" stroke-width="2.5"/>
+    <!-- Inner Screen -->
+    <rect x="10" y="10" width="486" height="388" rx="18" fill="#000000"/>
+
+    <!-- Left Rail (Miidia Cluster Rail) -->
+    <rect x="10" y="10" width="62" height="388" rx="18" fill="#08090C"/>
+    <line x1="72" y1="10" x2="72" y2="398" stroke="#22252A" stroke-width="1"/>
+
+    <!-- Mini Logo in Rail -->
+    <rect x="23" y="24" width="36" height="36" rx="10" fill="url(#logoGrad)"/>
+    <g fill="#FFFFFF" transform="translate(20, 21) scale(0.39)">
+      <circle cx="33" cy="35.5" r="4.5"/>
+      <rect x="28.5" y="43.5" width="9" height="31" rx="4.5"/>
+      <circle cx="47" cy="35.5" r="4.5"/>
+      <rect x="42.5" y="43.5" width="9" height="31" rx="4.5"/>
+      <path d="M59.5 46v26L79 59z" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Rail Active Home Button -->
+    <rect x="18" y="74" width="46" height="42" rx="10" fill="#1C1E22"/>
+    <path d="M33 93l8-7 8 7v8h-5v-5h-6v5h-5z" fill="none" stroke="#B58CFF" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="41" y="110" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#B58CFF" text-anchor="middle">Início</text>
+
+    <!-- Rail History Button -->
+    <circle cx="41" cy="140" r="8" fill="none" stroke="#8E95A0" stroke-width="1.6"/>
+    <path d="M41 136v4l3 2" fill="none" stroke="#8E95A0" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="41" y="159" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#8E95A0" text-anchor="middle">Histórico</text>
+
+    <!-- Rail Settings Button -->
+    <circle cx="41" cy="188" r="7.5" fill="none" stroke="#8E95A0" stroke-width="1.6"/>
+    <circle cx="41" cy="188" r="2.5" fill="#8E95A0"/>
+    <text x="41" y="207" font-family="system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#8E95A0" text-anchor="middle">Ajustes</text>
+
+    <!-- Rail Zoom Stack at Bottom -->
+    <rect x="19" y="294" width="44" height="30" rx="8" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+    <text x="41" y="314" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#F2F3F5" text-anchor="middle">A+</text>
+    <rect x="19" y="324" width="44" height="22" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+    <text x="41" y="339" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#B58CFF" text-anchor="middle">100%</text>
+    <rect x="19" y="346" width="44" height="30" rx="8" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+    <text x="41" y="366" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#F2F3F5" text-anchor="middle">A−</text>
+
+    <!-- Top Search Bar inside Car Screen -->
+    <rect x="88" y="24" width="256" height="40" rx="12" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+    <circle cx="108" cy="43" r="6" fill="none" stroke="#B58CFF" stroke-width="1.8"/>
+    <line x1="113" y1="48" x2="117" y2="52" stroke="#B58CFF" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="126" y="48" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#9BA1A9">Endereço ou busca…</text>
+
+    <!-- Android Auto Top Action Strip Pills -->
+    <rect x="354" y="24" width="64" height="40" rx="20" fill="#1C1E22" stroke="#2E323B" stroke-width="1"/>
+    <text x="386" y="48" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700" fill="#F2F3F5" text-anchor="middle">YouTube</text>
+    <rect x="424" y="24" width="56" height="40" rx="20" fill="#1C1E22" stroke="#2E323B" stroke-width="1"/>
+    <text x="452" y="48" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700" fill="#F2F3F5" text-anchor="middle">Rádio</text>
+
+    <!-- Cluster Left Column: Clock & Now Playing -->
+    <rect x="88" y="82" width="36" height="4" rx="2" fill="#B58CFF"/>
+    <text x="88" y="106" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#9BA1A9">Boa noite</text>
+    <text x="86" y="164" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#F2F3F5" letter-spacing="-1.5">21:45</text>
+    <text x="88" y="186" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#C9CDD3">Sex., 13 de nov.</text>
+
+    <!-- Resume / Now Playing Card -->
+    <rect x="88" y="206" width="148" height="54" rx="12" fill="#B58CFF"/>
+    <path d="M102 225l11 8-11 8z" fill="#000000"/>
+    <text x="120" y="230" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800" fill="#000000">Tocando agora</text>
+    <text x="120" y="247" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1E1B24">YouTube · 4K Live</text>
+
+    <!-- Media Controls ⏮ ⏯ ⏭ -->
+    <rect x="88" y="268" width="44" height="40" rx="10" fill="#1C1E22"/>
+    <path d="M104 282h2v12h-2zM116 282v12l-9-6z" fill="#FFFFFF"/>
+    <rect x="140" y="268" width="44" height="40" rx="10" fill="#1C1E22"/>
+    <rect x="157" y="281" width="3.5" height="14" rx="1" fill="#FFFFFF"/>
+    <rect x="164" y="281" width="3.5" height="14" rx="1" fill="#FFFFFF"/>
+    <rect x="192" y="268" width="44" height="40" rx="10" fill="#1C1E22"/>
+    <path d="M218 282h2v12h-2zM206 282v12l9-6z" fill="#FFFFFF"/>
+
+    <!-- Cluster Right Column: Favorites Grid -->
+    <text x="254" y="96" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#9BA1A9" letter-spacing="1.4">FAVORITOS</text>
+
+    <!-- Tile 1: YouTube -->
+    <g transform="translate(254, 108)">
+      <rect x="0" y="0" width="108" height="122" rx="14" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+      <rect x="12" y="12" width="42" height="42" rx="11" fill="url(#ytGrad)"/>
+      <text x="33" y="40" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">Y</text>
+      <text x="86" y="30" font-family="system-ui, sans-serif" font-size="16" fill="#B58CFF" text-anchor="middle">★</text>
+      <text x="12" y="88" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F2F3F5">YouTube</text>
+      <text x="12" y="106" font-family="system-ui, sans-serif" font-size="11.5" fill="#9BA1A9">youtube.com</text>
+    </g>
+
+    <!-- Tile 2: Stremio -->
+    <g transform="translate(372, 108)">
+      <rect x="0" y="0" width="108" height="122" rx="14" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+      <rect x="12" y="12" width="42" height="42" rx="11" fill="url(#stremioGrad)"/>
+      <text x="33" y="40" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">S</text>
+      <text x="86" y="30" font-family="system-ui, sans-serif" font-size="16" fill="#555A64" text-anchor="middle">☆</text>
+      <text x="12" y="88" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F2F3F5">Stremio</text>
+      <text x="12" y="106" font-family="system-ui, sans-serif" font-size="11.5" fill="#9BA1A9">stremio.com</text>
+    </g>
+
+    <!-- Tile 3: Rádio -->
+    <g transform="translate(254, 240)">
+      <rect x="0" y="0" width="108" height="122" rx="14" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+      <rect x="12" y="12" width="42" height="42" rx="11" fill="#FFFFFF"/>
+      <rect x="20" y="25" width="26" height="18" rx="4" fill="#FF3B2F"/>
+      <circle cx="38" cy="34" r="4.5" fill="#FFFFFF"/>
+      <rect x="24" y="30" width="7" height="2" rx="1" fill="#FFFFFF"/>
+      <rect x="24" y="35" width="7" height="2" rx="1" fill="#FFFFFF"/>
+      <text x="86" y="30" font-family="system-ui, sans-serif" font-size="16" fill="#B58CFF" text-anchor="middle">★</text>
+      <text x="12" y="88" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F2F3F5">Rádio</text>
+      <text x="12" y="106" font-family="system-ui, sans-serif" font-size="11.5" fill="#9BA1A9">Ao vivo</text>
+    </g>
+
+    <!-- Tile 4: Twitch / Favoritos -->
+    <g transform="translate(372, 240)">
+      <rect x="0" y="0" width="108" height="122" rx="14" fill="#0E0F11" stroke="#26282C" stroke-width="1"/>
+      <rect x="12" y="12" width="42" height="42" rx="11" fill="url(#webGrad)"/>
+      <text x="33" y="40" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">+</text>
+      <text x="12" y="88" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#F2F3F5">Favoritos</text>
+      <text x="12" y="106" font-family="system-ui, sans-serif" font-size="11.5" fill="#9BA1A9">Qualquer site</text>
+    </g>
+  </g>
+</svg>
