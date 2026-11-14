@@ -626,39 +626,76 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
     }
 
-    /* --- SIGNATURE & SECURITY CARD --- */
-    .sec-box {
+    /* --- COMPATIBILITY & FAQ --- */
+    .compat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 18px;
+    }
+    .compat-card {
       background: var(--card);
       border: 1px solid var(--edge);
-      border-radius: 22px;
-      padding: 28px 32px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: center;
-    }
-    .sec-box h3 {
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 6px;
+      border-radius: 20px;
+      padding: 24px;
       display: flex;
-      align-items: center;
-      gap: 10px;
+      flex-direction: column;
+      gap: 12px;
     }
-    .sec-box p {
+    .compat-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      align-self: flex-start;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 800;
+    }
+    .compat-badge.ok {
+      background: rgba(126, 226, 184, 0.14);
+      border: 1px solid rgba(126, 226, 184, 0.35);
+      color: var(--ok);
+    }
+    .compat-badge.no {
+      background: rgba(255, 59, 47, 0.14);
+      border: 1px solid rgba(255, 59, 47, 0.35);
+      color: #FF8078;
+    }
+    .compat-badge.warn {
+      background: rgba(245, 183, 64, 0.14);
+      border: 1px solid rgba(245, 183, 64, 0.35);
+      color: var(--amber);
+    }
+    .compat-card h3 {
+      font-size: 19px;
+      font-weight: 800;
+    }
+    .compat-card p {
       font-size: 14.5px;
       color: var(--muted);
-      margin-bottom: 14px;
     }
-    .hash-pill {
-      background: #0A0814;
-      border: 1px solid var(--edge);
-      border-radius: 12px;
-      padding: 12px 16px;
-      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-      font-size: 12.5px;
-      color: var(--accent);
-      word-break: break-all;
+    .faq-box {
+      background: var(--card);
+      border: 1px solid var(--edge-bright);
+      border-radius: 22px;
+      padding: 28px 32px;
+    }
+    .faq-box h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .faq-list li {
+      padding-left: 4px;
     }
 
     /* --- FOOTER --- */
@@ -683,7 +720,6 @@
 
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; padding: 40px 0; }
-      .sec-box { grid-template-columns: 1fr; }
     }
     @media (max-width: 560px) {
       .car-main { grid-template-columns: 1fr; }
@@ -721,7 +757,7 @@
       <div>
         <div class="eyebrow">
           <span class="dot"></span>
-          <span data-i18n="hero_badge">Android Auto · Sem Root · Sem PC · Teste Grátis de 14 Dias</span>
+          <span data-i18n="hero_badge">Android Auto · Sem Root · Sem PC · Teste Grátis de 7 Dias</span>
         </div>
         <h1>
           <span data-i18n="hero_title_1">YouTube, Stremio, Rádio Ao Vivo</span><br>
@@ -881,11 +917,36 @@
       </div>
     </section>
 
+    <!-- COMPATIBILITY -->
+    <section class="block" id="compatibility">
+      <div class="sec-head">
+        <h2 data-i18n="comp_title">Compatibilidade de Dispositivos</h2>
+        <p data-i18n="comp_sub">Confira os requisitos e dispositivos homologados antes de realizar a instalação.</p>
+      </div>
+      <div class="compat-grid">
+        <div class="compat-card">
+          <span class="compat-badge ok" data-i18n="c1_b">✅ Totalmente Compatível</span>
+          <h3 data-i18n="c1_t">Samsung com One UI 8.5+</h3>
+          <p data-i18n="c1_d">Amplamente testado e homologado em dispositivos Samsung atualizados com a One UI 8.5 ou superior.</p>
+        </div>
+        <div class="compat-card">
+          <span class="compat-badge no" data-i18n="c2_b">❌ Incompatível</span>
+          <h3 data-i18n="c2_t">Samsung com One UI 8.0 ou inferior</h3>
+          <p data-i18n="c2_d">O aplicativo não funciona em aparelhos Samsung rodando One UI 8.0 ou versões anteriores.</p>
+        </div>
+        <div class="compat-card">
+          <span class="compat-badge warn" data-i18n="c3_b">⚠️ Não Homologado · Teste Grátis (7 Dias)</span>
+          <h3 data-i18n="c3_t">Outras Marcas Android</h3>
+          <p data-i18n="c3_d">Ainda não testado oficialmente em outros fabricantes (sem garantia prévia de funcionamento), mas pode ser instalado e testado seguindo o mesmo padrão de instalação.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- INSTALLATION STEPS (15 VISUAL STEPS) -->
     <section class="block" id="install">
       <div class="sec-head">
         <h2 data-i18n="inst_title">Passo a Passo Completo de Instalação (15 Passos)</h2>
-        <p data-i18n="inst_sub">Acompanhe cada tela do processo no celular — do download do APK até a auto-ativação automática para o Android Auto, sem precisar de PC ou Root.</p>
+        <p data-i18n="inst_sub">Você não precisa de computador, ADB, Shizuku nem Root. Siga os 15 passos ilustrados abaixo com atenção (leva menos de 1 minuto!):</p>
       </div>
 
       <!-- PHASE 1: STEPS 1 TO 6 -->
@@ -936,9 +997,9 @@
         </div>
         <div class="steps-grid">
           <div class="step-card">
-            <div class="step-top"><div class="step-num">7</div><h4 data-i18n="s7_t">Permitir localização</h4></div>
+            <div class="step-top"><div class="step-num">7</div><h4 data-i18n="s7_t">Permissão do app</h4></div>
             <div class="step-img-wrap"><img src="assets/install/step-7.jpg" alt="Step 7" loading="lazy"></div>
-            <p data-i18n="s7_d">Toque em "Durante o uso do app" para permitir a detecção de movimento e rádio local.</p>
+            <p data-i18n="s7_d">Toque em "Durante o uso do app" para que todas as features do app funcionem corretamente.</p>
           </div>
           <div class="step-card">
             <div class="step-top"><div class="step-num">8</div><h4 data-i18n="s8_t">Ativar no Android Auto</h4></div>
@@ -999,21 +1060,19 @@
       <img id="lightboxImg" src="" alt="Preview">
     </div>
 
-    <!-- OFFICIAL SIGNATURE -->
-    <section class="block">
-      <div class="sec-box">
-        <div>
-          <h3>🛡️ <span data-i18n="sig_title">Assinatura Oficial & Verificação</span></h3>
-          <p data-i18n="sig_desc">Todos os APKs oficiais do Miidia são assinados com a mesma chave criptográfica RSA-4096, garantindo atualizações seguras e integridade do pacote.</p>
-          <div class="hash-pill">
-            SHA-256: 216e29208743d7ab52ff2b71da9e1ab3dfbd97a836c6dbed97c267e505d3788d
-          </div>
-        </div>
-        <div>
-          <a href="https://github.com/Miidia/releases" class="btn-secondary">
-            <span>GitHub Repo →</span>
-          </a>
-        </div>
+    <!-- FAQ -->
+    <section class="block" id="faq">
+      <div class="sec-head">
+        <h2 data-i18n="faq_title">Perguntas Frequentes (FAQ)</h2>
+      </div>
+      <div class="faq-box">
+        <h3 data-i18n="faq_q1">Concluí a instalação, mas o Miidia não apareceu no Android Auto do meu carro. O que devo fazer?</h3>
+        <ol class="faq-list">
+          <li data-i18n="faq_a1_1">Abra o Android Auto no celular e procure a opção "Personalizar acesso rápido" (Personalizar inicializador). Se o Miidia aparecer na lista, habilite-o e reconecte ao carro.</li>
+          <li data-i18n="faq_a1_2">Se não aparecer na lista, desinstale completamente o aplicativo do celular e reinstale seguindo o processo de instalação passo a passo (Passos 1 a 15) com cautela e atenção aos detalhes.</li>
+          <li data-i18n="faq_a1_3">Se mesmo assim não funcionar, verifique se o sistema do seu dispositivo está atualizado: em aparelhos Samsung, garanta que esteja usando a One UI 8.5 ou superior (não funciona na 8.0 ou inferior); em outras marcas, garanta que o sistema esteja na versão mais recente.</li>
+          <li data-i18n="faq_a1_4">Caso ainda não funcione após todas as verificações acima, é provável que o aparelho celular não seja compatível.</li>
+        </ol>
       </div>
     </section>
   </main>
@@ -1032,7 +1091,7 @@
     const I18N = {
       pt: {
         nav_dl: "Baixar APK",
-        hero_badge: "Android Auto · Sem Root · Sem PC · Teste Grátis de 14 Dias",
+        hero_badge: "Android Auto · Sem Root · Sem PC · Teste Grátis de 7 Dias",
         hero_title_1: "YouTube, Stremio, Rádio Ao Vivo",
         hero_title_2: "e Web na Tela do seu Carro.",
         hero_lead: "Navegador de mídia completo projetado para o Android Auto e Virtual Cockpit. Controle pelo celular, ajuste fino de sincronia de áudio Bluetooth e ativação direta em 1 toque.",
@@ -1068,8 +1127,19 @@
         f7_d: "Esqueça computadores, ADB ou Shizuku. O próprio Miidia ativa sua compatibilidade com o Android Auto na primeira abertura.",
         f8_t: "Auto-Atualização Integrada",
         f8_d: "Verifique e instale novas versões com 1 toque diretamente pela aba \"Sobre\" do app, mantendo o reconhecimento no Android Auto.",
+        comp_title: "Compatibilidade de Dispositivos",
+        comp_sub: "Confira os requisitos e dispositivos homologados antes de realizar a instalação.",
+        c1_b: "✅ Totalmente Compatível",
+        c1_t: "Samsung com One UI 8.5+",
+        c1_d: "Amplamente testado e homologado em dispositivos Samsung atualizados com a One UI 8.5 ou superior.",
+        c2_b: "❌ Incompatível",
+        c2_t: "Samsung com One UI 8.0 ou inferior",
+        c2_d: "O aplicativo não funciona em aparelhos Samsung rodando One UI 8.0 ou versões anteriores.",
+        c3_b: "⚠️ Não Homologado · Teste Grátis (7 Dias)",
+        c3_t: "Outras Marcas Android",
+        c3_d: "Ainda não testado oficialmente em outros fabricantes (sem garantia prévia de funcionamento), mas pode ser instalado e testado seguindo o mesmo padrão de instalação.",
         inst_title: "Passo a Passo Completo de Instalação (15 Passos)",
-        inst_sub: "Acompanhe cada tela do processo no celular — do download do APK até a auto-ativação automática para o Android Auto, sem precisar de PC ou Root.",
+        inst_sub: "Você não precisa de computador, ADB, Shizuku nem Root. Siga os 15 passos ilustrados abaixo com atenção (leva menos de 1 minuto!):",
         ph1_badge: "Parte 1 · Passos 1 a 6",
         ph1_title: "Download e Instalação Inicial do APK",
         ph2_badge: "Parte 2 · Passos 7 a 10",
@@ -1088,8 +1158,8 @@
         s5_d: "Nas opções expandidas, toque no link \"Instalar assim mesmo\" para prosseguir.",
         s6_t: "Abrir o Miidia",
         s6_d: "Quando exibir \"App instalado\", toque em \"Abrir\" para iniciar o aplicativo.",
-        s7_t: "Permitir localização",
-        s7_d: "Toque em \"Durante o uso do app\" para permitir a detecção de movimento e rádio local.",
+        s7_t: "Permissão do app",
+        s7_d: "Toque em \"Durante o uso do app\" para que todas as features do app funcionem corretamente.",
         s8_t: "Ativar no Android Auto",
         s8_d: "No aviso \"Ativar no Android Auto\", toque no botão roxo \"Ativar\".",
         s9_t: "Apps desconhecidos",
@@ -1106,13 +1176,17 @@
         s14_d: "Com a confirmação \"O app foi atualizado\", toque em \"Abrir\".",
         s15_t: "Pronto para usar!",
         s15_d: "O Miidia abre liberado e já aparece automaticamente na tela do Android Auto do seu carro!",
-        sig_title: "Assinatura Oficial & Verificação",
-        sig_desc: "Todos os APKs oficiais do Miidia são assinados com a mesma chave criptográfica RSA-4096, garantindo atualizações seguras e integridade do pacote.",
+        faq_title: "Perguntas Frequentes (FAQ)",
+        faq_q1: "Concluí a instalação, mas o Miidia não apareceu no Android Auto do meu carro. O que devo fazer?",
+        faq_a1_1: "Abra o Android Auto no celular e procure a opção \"Personalizar acesso rápido\" (Personalizar inicializador). Se o Miidia aparecer na lista, habilite-o e reconecte ao carro.",
+        faq_a1_2: "Se não aparecer na lista, desinstale completamente o aplicativo do celular e reinstale seguindo o processo de instalação passo a passo (Passos 1 a 15) com cautela e atenção aos detalhes.",
+        faq_a1_3: "Se mesmo assim não funcionar, verifique se o sistema do seu dispositivo está atualizado: em aparelhos Samsung, garanta que esteja usando a One UI 8.5 ou superior (não funciona na 8.0 ou inferior); em outras marcas, garanta que o sistema esteja na versão mais recente.",
+        faq_a1_4: "Caso ainda não funcione após todas as verificações acima, é provável que o aparelho celular não seja compatível.",
         footer_sub: "Navegador de mídia para Android Auto · Português · English · Español"
       },
       en: {
         nav_dl: "Download APK",
-        hero_badge: "Android Auto · No Root · No PC · 14-Day Free Trial",
+        hero_badge: "Android Auto · No Root · No PC · 7-Day Free Trial",
         hero_title_1: "YouTube, Stremio, Live Radio",
         hero_title_2: "& Web on Your Car Screen.",
         hero_lead: "Full-featured media browser built for Android Auto and Virtual Cockpit. Phone remote control, fine Bluetooth audio lip-sync adjustment, and 1-tap self-activation.",
@@ -1148,8 +1222,19 @@
         f7_d: "No PC, ADB, or Shizuku required. Miidia enables its own Android Auto recognition on first launch.",
         f8_t: "Built-In Auto-Update",
         f8_d: "Check for and install new releases with 1 tap from the \"About\" tab while keeping Android Auto compatibility intact.",
+        comp_title: "Device Compatibility",
+        comp_sub: "Check the supported devices and system requirements before installing.",
+        c1_b: "✅ Fully Compatible",
+        c1_t: "Samsung with One UI 8.5+",
+        c1_d: "Extensively tested and verified on Samsung devices running One UI 8.5 or newer.",
+        c2_b: "❌ Not Supported",
+        c2_t: "Samsung with One UI 8.0 or lower",
+        c2_d: "Does not work on Samsung devices running One UI 8.0 or earlier versions.",
+        c3_b: "⚠️ Untested · 7-Day Free Trial",
+        c3_t: "Other Android Brands",
+        c3_d: "Not officially tested on other Android manufacturers (so compatibility is not guaranteed), but you can install and test it following the exact same installation steps.",
         inst_title: "Complete Visual Installation Guide (15 Steps)",
-        inst_sub: "Follow every screen on your phone — from downloading the APK to automatic Android Auto self-activation, with no PC or Root needed.",
+        inst_sub: "You do not need a computer, ADB, Shizuku, or Root. Carefully follow the 15 illustrated steps below (takes under 1 minute!):",
         ph1_badge: "Part 1 · Steps 1 to 6",
         ph1_title: "APK Download & Initial Installation",
         ph2_badge: "Part 2 · Steps 7 to 10",
@@ -1168,8 +1253,8 @@
         s5_d: "In the expanded details, tap the \"Install anyway\" link to proceed.",
         s6_t: "Open Miidia",
         s6_d: "When \"App installed\" appears, tap \"Open\" to launch the app.",
-        s7_t: "Allow location",
-        s7_d: "Tap \"While using the app\" to allow driving speed detection and local radio.",
+        s7_t: "App permission",
+        s7_d: "Tap \"While using the app\" so that all app features work properly.",
         s8_t: "Enable in Android Auto",
         s8_d: "On the \"Enable in Android Auto\" dialog, tap the purple \"Enable\" button.",
         s9_t: "Install unknown apps",
@@ -1186,13 +1271,17 @@
         s14_d: "When \"App updated\" is shown, tap \"Open\".",
         s15_t: "Ready to use!",
         s15_d: "Miidia opens unlocked and now appears automatically on your car's Android Auto display!",
-        sig_title: "Official Signature & Verification",
-        sig_desc: "Every official Miidia APK is signed with the same RSA-4096 release key, ensuring safe updates and package authenticity.",
+        faq_title: "Frequently Asked Questions (FAQ)",
+        faq_q1: "I completed the installation, but Miidia did not appear on my car's Android Auto screen. What should I do?",
+        faq_a1_1: "Open Android Auto on your phone and look for \"Customize launcher\" (Quick access customization). If Miidia appears in the list, enable it and reconnect to your car.",
+        faq_a1_2: "If it does not appear in the list, completely uninstall the app from your phone and reinstall it following the step-by-step installation guide (Steps 1 to 15) carefully and paying close attention to every detail.",
+        faq_a1_3: "If it still does not work, check whether your device software is up to date: on Samsung phones, make sure you are running One UI 8.5 or higher (8.0 and lower are not supported); on other brands, ensure the system is updated to the latest version.",
+        faq_a1_4: "If it still does not work after all checks above, your phone is likely not compatible.",
         footer_sub: "Media browser for Android Auto · Português · English · Español"
       },
       es: {
         nav_dl: "Descargar APK",
-        hero_badge: "Android Auto · Sin Root · Sin PC · Prueba Gratis de 14 Días",
+        hero_badge: "Android Auto · Sin Root · Sin PC · Prueba Gratis de 7 Días",
         hero_title_1: "YouTube, Stremio, Radio en Vivo",
         hero_title_2: "y Web en la Pantalla de tu Coche.",
         hero_lead: "Navegador multimedia completo diseñado para Android Auto y Virtual Cockpit. Control desde el móvil, sincronización fina de audio Bluetooth y activación directa en 1 toque.",
@@ -1228,8 +1317,19 @@
         f7_d: "Olvídate del PC, ADB o Shizuku. Miidia habilita su propia compatibilidad con Android Auto en la primera apertura.",
         f8_t: "Auto-Actualización Integrada",
         f8_d: "Comprueba e instala nuevas versiones con 1 toque desde la pestaña \"Acerca de\", manteniendo la activación en Android Auto.",
+        comp_title: "Compatibilidad de Dispositivos",
+        comp_sub: "Consulta los requisitos y dispositivos verificados antes de realizar la instalación.",
+        c1_b: "✅ Totalmente Compatible",
+        c1_t: "Samsung con One UI 8.5+",
+        c1_d: "Ampliamente probado y verificado en dispositivos Samsung actualizados con One UI 8.5 o superior.",
+        c2_b: "❌ Incompatible",
+        c2_t: "Samsung con One UI 8.0 o inferior",
+        c2_d: "La aplicación no funciona en dispositivos Samsung con One UI 8.0 o versiones anteriores.",
+        c3_b: "⚠️ No Homologado · Prueba Gratis (7 Días)",
+        c3_t: "Otras Marcas Android",
+        c3_d: "No probado oficialmente en otros fabricantes (sin garantía previa de funcionamiento), pero puede instalarse y probarse siguiendo el mismo proceso de instalación.",
         inst_title: "Guía Visual Completa de Instalación (15 Pasos)",
-        inst_sub: "Sigue cada pantalla en tu móvil — desde la descarga del APK hasta la auto-activación automática para Android Auto, sin PC ni Root.",
+        inst_sub: "No necesitas ordenador, ADB, Shizuku ni Root. Sigue con atención los 15 pasos ilustrados a continuación (¡toma menos de 1 minuto!):",
         ph1_badge: "Parte 1 · Pasos 1 a 6",
         ph1_title: "Descarga e Instalación Inicial del APK",
         ph2_badge: "Parte 2 · Pasos 7 a 10",
@@ -1248,8 +1348,8 @@
         s5_d: "En las opciones desplegadas, toca el enlace \"Instalar de todas formas\" para continuar.",
         s6_t: "Abrir Miidia",
         s6_d: "Cuando aparezca \"Aplicación instalada\", toca \"Abrir\" para iniciar la app.",
-        s7_t: "Permitir ubicación",
-        s7_d: "Toca \"Mientras se usa la aplicación\" para permitir detección de movimiento y radio local.",
+        s7_t: "Permiso de la app",
+        s7_d: "Toca \"Mientras se usa la aplicación\" para que todas las funciones de la app funcionen correctamente.",
         s8_t: "Activar en Android Auto",
         s8_d: "En el aviso \"Activar en Android Auto\", toca el botón morado \"Activar\".",
         s9_t: "Apps desconocidas",
@@ -1266,8 +1366,12 @@
         s14_d: "Con la confirmación \"Se actualizó la app\", toca \"Abrir\".",
         s15_t: "¡Listo para usar!",
         s15_d: "¡Miidia se abre desbloqueado y ya aparece automáticamente en la pantalla Android Auto de tu coche!",
-        sig_title: "Firma Oficial y Verificación",
-        sig_desc: "Todos los APKs oficiales de Miidia están firmados con la misma clave criptográfica RSA-4096, garantizando actualizaciones seguras.",
+        faq_title: "Preguntas Frecuentes (FAQ)",
+        faq_q1: "Completé la instalación, pero Miidia no apareció en el Android Auto de mi coche. ¿Qué debo hacer?",
+        faq_a1_1: "Abre Android Auto en tu móvil y busca la opción \"Personalizar acceso rápido\" (Personalizar iniciador). Si Miidia aparece en la lista, actívalo y vuelve a conectar al coche.",
+        faq_a1_2: "Si no aparece en la lista, desinstala por completo la aplicación del móvil y vuelve a instalarla siguiendo el proceso de instalación paso a paso (Pasos 1 a 15) con precaución y atención a los detalles.",
+        faq_a1_3: "Si aun así no funciona, comprueba que tu dispositivo esté actualizado: en móviles Samsung, asegúrate de usar One UI 8.5 o superior (no funciona en 8.0 o inferior); en otras marcas, asegúrate de tener la última actualización del sistema.",
+        faq_a1_4: "Si sigue sin funcionar tras todas las comprobaciones anteriores, es probable que tu teléfono no sea compatible.",
         footer_sub: "Navegador multimedia para Android Auto · Português · English · Español"
       }
     };
