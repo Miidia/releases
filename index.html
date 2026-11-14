@@ -242,8 +242,8 @@
 
     /* --- INTERACTIVE CAR SCREEN PREVIEW (CLUSTER MOCKUP) --- */
     .car-frame {
-      background: #050608;
-      border: 2.5px solid #2B303B;
+      background: #07080A;
+      border: 2.5px solid #2A2D35;
       border-radius: 26px;
       padding: 10px;
       box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), 0 0 40px rgba(139, 92, 246, 0.18);
@@ -252,63 +252,59 @@
       background: #000;
       border-radius: 18px;
       display: grid;
-      grid-template-columns: 64px 1fr;
-      min-height: 360px;
+      grid-template-columns: 58px 1fr;
+      min-height: 365px;
       overflow: hidden;
       border: 1px solid #1C1E22;
     }
     .car-rail {
-      background: #07080B;
-      border-right: 1px solid var(--cluster-line);
+      background: #000;
+      border-right: 1px solid #191B1F;
       padding: 12px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
     .car-rail img {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
       margin-bottom: 4px;
     }
     .rail-item {
-      width: 48px;
-      height: 44px;
-      border-radius: 11px;
+      width: 46px;
+      height: 38px;
+      border-radius: 12px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2px;
-      font-size: 9.5px;
-      font-weight: 700;
-      color: #8E95A0;
+      color: #B8BDC5;
     }
     .rail-item.on {
-      background: var(--cluster-raised);
-      color: var(--cluster-acc);
+      background: #1F2126;
+      color: #F5B740;
     }
     .rail-zoom {
       margin-top: auto;
       display: flex;
       flex-direction: column;
       width: 44px;
-      border: 1px solid var(--cluster-line);
-      border-radius: 10px;
+      border: 1px solid #22252A;
+      border-radius: 11px;
       overflow: hidden;
       text-align: center;
-      font-weight: 700;
-      font-size: 12px;
-      background: var(--cluster-panel);
+      font-weight: 800;
+      font-size: 13px;
+      background: #07080A;
     }
-    .rail-zoom div { padding: 5px 0; }
+    .rail-zoom div { padding: 6px 0; }
     .rail-zoom .pct {
-      font-size: 10px;
-      color: var(--cluster-acc);
-      border-top: 1px solid var(--cluster-line);
-      border-bottom: 1px solid var(--cluster-line);
-      padding: 3px 0;
+      font-size: 10.5px;
+      color: #F5B740;
+      border-top: 1px solid #22252A;
+      border-bottom: 1px solid #22252A;
+      padding: 4px 0;
     }
     .car-body {
       padding: 14px 16px;
@@ -323,90 +319,130 @@
     }
     .car-search {
       flex: 1;
-      height: 38px;
-      background: var(--cluster-panel);
-      border: 1px solid var(--cluster-line);
-      border-radius: 11px;
-      padding: 0 12px;
+      height: 42px;
+      background: #0B0C0E;
+      border: 1px solid #22252A;
+      border-radius: 12px;
+      padding: 0 6px 0 12px;
       display: flex;
       align-items: center;
       gap: 8px;
       font-size: 12.5px;
-      color: #9BA1A9;
+      color: #8C919A;
     }
-    .car-pill {
-      height: 36px;
-      padding: 0 12px;
-      border-radius: 18px;
-      background: var(--cluster-raised);
-      border: 1px solid #2E323B;
+    .car-search-mic {
+      margin-left: auto;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: #1A1C20;
       display: flex;
       align-items: center;
-      font-size: 11.5px;
-      font-weight: 700;
+      justify-content: center;
+      color: #E2E5E9;
+    }
+    .car-trial-pill {
+      height: 42px;
+      padding: 0 13px;
+      border-radius: 12px;
+      background: #0B0C0E;
+      border: 1px solid #22252A;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 800;
       color: #F2F3F5;
+      white-space: nowrap;
+    }
+    .car-trial-pill small {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: #F5B740;
     }
     .car-main {
       display: grid;
-      grid-template-columns: 155px 1fr;
-      gap: 16px;
+      grid-template-columns: 148px 1fr;
+      gap: 14px;
       flex: 1;
-      align-items: start;
+      align-items: stretch;
     }
     .car-clock-col {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      padding-top: 8px;
     }
-    .car-bar-acc {
-      width: 34px;
-      height: 4px;
-      border-radius: 2px;
-      background: var(--cluster-acc);
-      margin-bottom: 4px;
-    }
-    .car-greet { font-size: 12px; color: #9BA1A9; font-weight: 500; }
     .car-time {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 52px;
+      font-size: 58px;
       font-weight: 700;
-      line-height: 0.95;
-      color: #F2F3F5;
+      line-height: 0.92;
+      color: #F5F6F8;
+      letter-spacing: -0.02em;
     }
-    .car-date { font-size: 13px; font-weight: 600; color: #C9CDD3; margin-bottom: 6px; }
+    .car-date {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #E1E4E8;
+      margin-top: 6px;
+      margin-bottom: auto;
+    }
     .car-resume {
-      background: var(--cluster-acc);
-      color: #000;
-      border-radius: 11px;
-      padding: 8px 11px;
+      background: #F5B740;
+      color: #141414;
+      border-radius: 12px;
+      padding: 8px 8px 8px 10px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
+      margin-top: 14px;
     }
     .car-resume b { display: block; font-size: 12px; font-weight: 800; line-height: 1.15; }
-    .car-resume span { display: block; font-size: 10.5px; font-weight: 600; opacity: 0.85; }
+    .car-resume span { display: block; font-size: 10px; font-weight: 600; color: #2A210B; }
+    .car-resume-go {
+      margin-left: auto;
+      width: 26px;
+      height: 32px;
+      border-radius: 7px;
+      background: #C99224;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 13px;
+    }
     .car-media-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 6px;
-      margin-top: 2px;
+      margin-top: 7px;
     }
     .car-mbtn {
-      height: 36px;
-      border-radius: 9px;
-      background: var(--cluster-raised);
+      height: 38px;
+      border-radius: 10px;
+      background: #17191D;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 12px;
+      color: #F2F3F5;
     }
     .car-grid-head {
-      font-size: 10.5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.12em;
-      color: #9BA1A9;
-      text-transform: uppercase;
+      color: #9BA1AA;
       margin-bottom: 8px;
+    }
+    .car-grid-head .lbl {
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .car-grid-head .hint b {
+      color: #F5B740;
     }
     .car-tiles {
       display: grid;
@@ -414,19 +450,19 @@
       gap: 9px;
     }
     .car-tile {
-      background: var(--cluster-panel);
-      border: 1px solid var(--cluster-line);
+      background: #0D0F12;
+      border: 1px solid #22252A;
       border-radius: 13px;
       padding: 11px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 108px;
+      min-height: 112px;
       position: relative;
       transition: border-color 0.18s ease, transform 0.18s ease;
     }
     .car-tile:hover {
-      border-color: var(--cluster-acc);
+      border-color: #F5B740;
       transform: translateY(-2px);
     }
     .car-tile-icon {
@@ -444,11 +480,11 @@
       position: absolute;
       top: 10px;
       right: 11px;
-      font-size: 14px;
-      color: var(--cluster-acc);
+      font-size: 15px;
+      color: #F5B740;
     }
     .car-tile b { display: block; font-size: 14px; color: #F2F3F5; }
-    .car-tile span { display: block; font-size: 11px; color: #9BA1A9; }
+    .car-tile span { display: block; font-size: 11px; color: #8C919A; }
 
     /* --- SECTION HEADERS --- */
     section.block { padding: 56px 0; }
@@ -764,7 +800,7 @@
           <span class="grad" data-i18n="hero_title_2">e Web na Tela do seu Carro.</span>
         </h1>
         <p class="lead" data-i18n="hero_lead">
-          Navegador de mídia completo projetado para o Android Auto e Virtual Cockpit. Controle pelo celular, ajuste fino de sincronia de áudio Bluetooth e ativação direta em 1 toque.
+          O app que transforma seu Android Auto em uma verdadeira central multimídia, com acesso ao YouTube, Rádios ao vivo do mundo inteiro e livre acesso aos seus sites favoritos direto na tela do seu veículo. Conta com controle remoto pelo celular e diversas opções de preferência e personalização: visual, idioma, home page, páginas e rádios favoritas.
         </p>
         <div class="cta-group">
           <a id="mainDownloadBtn" href="https://github.com/Miidia/releases/releases/latest" class="btn-primary">
@@ -772,7 +808,7 @@
             <span data-i18n="cta_download">Baixar Miidia APK</span>
           </a>
           <a href="#install" class="btn-secondary">
-            <span data-i18n="cta_how">Como instalar (1 min)</span>
+            <span data-i18n="cta_how">Como instalar (15 passos)</span>
           </a>
         </div>
         <div class="hero-meta">
@@ -782,22 +818,19 @@
         </div>
       </div>
 
-      <!-- LIVE CLUSTER UI PREVIEW -->
+      <!-- LIVE CLUSTER UI PREVIEW (MATCHING REAL SCREENSHOT 1:1) -->
       <div class="car-frame" aria-label="Miidia Car Screen Preview">
         <div class="car-screen">
           <div class="car-rail">
             <img src="assets/logo.svg" alt="Miidia">
-            <div class="rail-item on">
+            <div class="rail-item on" title="Início">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>
-              <span data-i18n="mock_home">Início</span>
             </div>
-            <div class="rail-item">
+            <div class="rail-item" title="Histórico">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-              <span data-i18n="mock_hist">Histórico</span>
             </div>
-            <div class="rail-item">
+            <div class="rail-item" title="Ajustes">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-              <span data-i18n="mock_set">Ajustes</span>
             </div>
             <div class="rail-zoom">
               <div>A+</div>
@@ -809,54 +842,61 @@
           <div class="car-body">
             <div class="car-top">
               <div class="car-search">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B58CFF" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-                <span data-i18n="mock_search">Endereço ou busca…</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5B740" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+                <span data-i18n="mock_search">Endereço ou busca...</span>
+                <div class="car-search-mic">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+                </div>
               </div>
-              <div class="car-pill">YouTube</div>
-              <div class="car-pill" data-i18n="mock_radio">Rádio</div>
+              <div class="car-trial-pill">
+                <small>TRIAL</small>
+                <span data-i18n="mock_trial">Restam 6 dias</span>
+              </div>
             </div>
 
             <div class="car-main">
               <div class="car-clock-col">
-                <div class="car-bar-acc"></div>
-                <div class="car-greet" data-i18n="mock_greet">Boa noite</div>
-                <div class="car-time" id="liveClock">21:45</div>
-                <div class="car-date" data-i18n="mock_date">Visual Cluster</div>
+                <div class="car-time" id="liveClock">23:28</div>
+                <div class="car-date" data-i18n="mock_date">Sexta-feira, 13 de novembro</div>
                 <div class="car-resume">
                   <span>▶</span>
                   <div>
-                    <b data-i18n="mock_playing">Tocando agora</b>
-                    <span>YouTube · Live</span>
+                    <b data-i18n="mock_playing">Tocando ag...</b>
+                    <span>Quiet Solitude - ...</span>
                   </div>
+                  <div class="car-resume-go">›</div>
                 </div>
                 <div class="car-media-row">
                   <div class="car-mbtn">⏮</div>
-                  <div class="car-mbtn">⏯</div>
+                  <div class="car-mbtn">⏸</div>
                   <div class="car-mbtn">⏭</div>
                 </div>
               </div>
 
               <div>
-                <div class="car-grid-head" data-i18n="mock_favs">FAVORITOS · ⭐ BARRA SUPERIOR</div>
+                <div class="car-grid-head">
+                  <span class="lbl" data-i18n="mock_favs">FAVORITOS</span>
+                  <span class="hint"><b>★</b> <span data-i18n="mock_top_hint">= barra superior (máx. 2)</span></span>
+                </div>
                 <div class="car-tiles">
                   <div class="car-tile">
-                    <div class="car-tile-icon" style="background:linear-gradient(135deg,#FF3B2F,#C50101)">Y</div>
+                    <div class="car-tile-icon" style="background:linear-gradient(135deg,#EB251C,#B80702)">Y</div>
                     <span class="car-tile-star">★</span>
                     <div><b>YouTube</b><span>youtube.com</span></div>
                   </div>
                   <div class="car-tile">
-                    <div class="car-tile-icon" style="background:linear-gradient(135deg,#8B5CF6,#5B3FA8)">S</div>
-                    <span class="car-tile-star" style="color:#555A64">☆</span>
-                    <div><b>Stremio</b><span>stremio.com</span></div>
+                    <div class="car-tile-icon" style="background:linear-gradient(135deg,#8446F6,#5D2EB8)">S</div>
+                    <span class="car-tile-star" style="color:#8C919A">☆</span>
+                    <div><b>Stremio</b><span>web.stremio.com</span></div>
                   </div>
                   <div class="car-tile">
-                    <div class="car-tile-icon" style="background:linear-gradient(135deg,#3B9BFF,#0050DC)">📻</div>
-                    <span class="car-tile-star">★</span>
-                    <div><b data-i18n="mock_radio">Rádio</b><span data-i18n="mock_live">Estações ao vivo</span></div>
+                    <div class="car-tile-icon" style="background:#FFFFFF;color:#E53935">📻</div>
+                    <span class="car-tile-star" style="color:#8C919A">☆</span>
+                    <div><b>Radio</b><span data-i18n="mock_live">Estações ao vivo</span></div>
                   </div>
                   <div class="car-tile">
-                    <div class="car-tile-icon" style="background:linear-gradient(135deg,#2BC48A,#0B7A55)">+</div>
-                    <div><b data-i18n="mock_add">Favoritos</b><span data-i18n="mock_any">Qualquer site</span></div>
+                    <div class="car-tile-icon" style="background:#25282E">⚙️</div>
+                    <div><b data-i18n="mock_set">Ajustes</b><span data-i18n="mock_set_sub">Escala, barra, início</span></div>
                   </div>
                 </div>
               </div>
@@ -1094,21 +1134,18 @@
         hero_badge: "Android Auto · Sem Root · Sem PC · Teste Grátis de 7 Dias",
         hero_title_1: "YouTube, Stremio, Rádio Ao Vivo",
         hero_title_2: "e Web na Tela do seu Carro.",
-        hero_lead: "Navegador de mídia completo projetado para o Android Auto e Virtual Cockpit. Controle pelo celular, ajuste fino de sincronia de áudio Bluetooth e ativação direta em 1 toque.",
+        hero_lead: "O app que transforma seu Android Auto em uma verdadeira central multimídia, com acesso ao YouTube, Rádios ao vivo do mundo inteiro e livre acesso aos seus sites favoritos direto na tela do seu veículo. Conta com controle remoto pelo celular e diversas opções de preferência e personalização: visual, idioma, home page, páginas e rádios favoritas.",
         cta_download: "Baixar Miidia APK",
         cta_how: "Como instalar (15 passos)",
-        mock_home: "Início",
-        mock_hist: "Histórico",
-        mock_set: "Ajustes",
-        mock_search: "Endereço ou busca…",
-        mock_radio: "Rádio",
-        mock_greet: "Boa noite",
-        mock_date: "Visual Cluster",
-        mock_playing: "Tocando agora",
-        mock_favs: "FAVORITOS · ⭐ BARRA SUPERIOR",
+        mock_search: "Endereço ou busca...",
+        mock_trial: "Restam 6 dias",
+        mock_date: "Sexta-feira, 13 de novembro",
+        mock_playing: "Tocando ag...",
+        mock_favs: "FAVORITOS",
+        mock_top_hint: "= barra superior (máx. 2)",
         mock_live: "Estações ao vivo",
-        mock_add: "Favoritos",
-        mock_any: "Qualquer site",
+        mock_set: "Ajustes",
+        mock_set_sub: "Escala, barra, início",
         feat_title: "Construído para a Multimídia do seu Veículo",
         feat_sub: "Interface pensada para leitura rápida no trânsito, controles práticos pelo celular e compatibilidade nativa com Android Auto.",
         f1_t: "YouTube & Stremio Otimizados",
@@ -1189,21 +1226,18 @@
         hero_badge: "Android Auto · No Root · No PC · 7-Day Free Trial",
         hero_title_1: "YouTube, Stremio, Live Radio",
         hero_title_2: "& Web on Your Car Screen.",
-        hero_lead: "Full-featured media browser built for Android Auto and Virtual Cockpit. Phone remote control, fine Bluetooth audio lip-sync adjustment, and 1-tap self-activation.",
+        hero_lead: "The app that turns your Android Auto into a true multimedia center, with access to YouTube, live radio stations worldwide, and free access to your favorite websites right on your vehicle's display. Features phone remote control and rich customization options: visual theme, language, home page, favorite sites, and radio stations.",
         cta_download: "Download Miidia APK",
         cta_how: "How to install (15 steps)",
-        mock_home: "Home",
-        mock_hist: "History",
-        mock_set: "Settings",
-        mock_search: "Address or search…",
-        mock_radio: "Radio",
-        mock_greet: "Good evening",
-        mock_date: "Cluster Look",
-        mock_playing: "Now playing",
-        mock_favs: "FAVORITES · ⭐ TOP BAR",
+        mock_search: "Address or search...",
+        mock_trial: "6 days left",
+        mock_date: "Friday, November 13",
+        mock_playing: "Now playin...",
+        mock_favs: "FAVORITES",
+        mock_top_hint: "= top bar (max. 2)",
         mock_live: "Live stations",
-        mock_add: "Favorites",
-        mock_any: "Any website",
+        mock_set: "Settings",
+        mock_set_sub: "Scale, bar, home",
         feat_title: "Purpose-Built for Your Car Display",
         feat_sub: "Designed for quick glanceability on the road, effortless phone control, and seamless Android Auto integration.",
         f1_t: "Car-Ready YouTube & Stremio",
@@ -1284,21 +1318,18 @@
         hero_badge: "Android Auto · Sin Root · Sin PC · Prueba Gratis de 7 Días",
         hero_title_1: "YouTube, Stremio, Radio en Vivo",
         hero_title_2: "y Web en la Pantalla de tu Coche.",
-        hero_lead: "Navegador multimedia completo diseñado para Android Auto y Virtual Cockpit. Control desde el móvil, sincronización fina de audio Bluetooth y activación directa en 1 toque.",
+        hero_lead: "La app que transforma tu Android Auto en un verdadero centro multimedia, con acceso a YouTube, radios en vivo de todo el mundo y libre acceso a tus sitios favoritos directo en la pantalla de tu vehículo. Cuenta con control remoto desde el móvil y múltiples opciones de personalización: diseño, idioma, página de inicio, páginas y radios favoritas.",
         cta_download: "Descargar Miidia APK",
         cta_how: "Cómo instalar (15 pasos)",
-        mock_home: "Inicio",
-        mock_hist: "Historial",
-        mock_set: "Ajustes",
-        mock_search: "Dirección o búsqueda…",
-        mock_radio: "Radio",
-        mock_greet: "Buenas noches",
-        mock_date: "Visual Cluster",
-        mock_playing: "Reproduciendo",
-        mock_favs: "FAVORITOS · ⭐ BARRA SUPERIOR",
+        mock_search: "Dirección o búsqueda...",
+        mock_trial: "Quedan 6 días",
+        mock_date: "Viernes, 13 de noviembre",
+        mock_playing: "Reproducien...",
+        mock_favs: "FAVORITOS",
+        mock_top_hint: "= barra superior (máx. 2)",
         mock_live: "Emisoras en vivo",
-        mock_add: "Favoritos",
-        mock_any: "Cualquier sitio",
+        mock_set: "Ajustes",
+        mock_set_sub: "Escala, barra, inicio",
         feat_title: "Diseñado para la Pantalla de tu Vehículo",
         feat_sub: "Interfaz pensada para una lectura rápida en carretera, control cómodo desde el móvil e integración nativa con Android Auto.",
         f1_t: "YouTube y Stremio Optimizados",

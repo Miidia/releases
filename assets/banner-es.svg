@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0817"/>
+      <stop offset="55%" stop-color="#0E0B1E"/>
+      <stop offset="100%" stop-color="#140D2B"/>
+    </linearGradient>
+    <radialGradient id="glowPurple" cx="24%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowAmber" cx="80%" cy="65%" r="50%">
+      <stop offset="0%" stop-color="#F5B740" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B37D6"/>
+      <stop offset="100%" stop-color="#9D50FF"/>
+    </linearGradient>
+    <linearGradient id="ytGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EB251C"/>
+      <stop offset="100%" stop-color="#B80702"/>
+    </linearGradient>
+    <linearGradient id="stremioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8446F6"/>
+      <stop offset="100%" stop-color="#5D2EB8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Main Canvas -->
+  <rect width="1200" height="540" rx="28" fill="url(#bgGrad)"/>
+  <rect width="1200" height="540" rx="28" fill="url(#glowPurple)"/>
+  <rect width="1200" height="540" rx="28" fill="url(#glowAmber)"/>
+
+  <!-- Subtle Wave Lines -->
+  <g opacity="0.12" fill="none" stroke="#A855F7" stroke-width="1.2">
+    <path d="M-20 400 C200 340 380 480 620 430 S920 280 1220 350"/>
+    <path d="M-20 420 C200 360 380 500 620 450 S920 300 1220 370"/>
+    <path d="M-20 440 C200 380 380 520 620 470 S920 320 1220 390"/>
+  </g>
+
+  <!-- Border Frame -->
+  <rect x="1.5" y="1.5" width="1197" height="537" rx="26.5" fill="none" stroke="#2D2748" stroke-width="2"/>
+
+  <!-- LEFT COLUMN: Brand & Messaging (ES) -->
+  <g transform="translate(52, 56)">
+    <!-- App Icon + Brand Name -->
+    <g filter="url(#shadow)">
+      <rect x="0" y="0" width="76" height="76" rx="20" fill="url(#logoGrad)"/>
+      <g fill="#FFFFFF" transform="translate(-5, -5) scale(0.78)">
+        <circle cx="33" cy="35.5" r="4.5"/>
+        <rect x="28.5" y="43.5" width="9" height="31" rx="4.5"/>
+        <circle cx="47" cy="35.5" r="4.5"/>
+        <rect x="42.5" y="43.5" width="9" height="31" rx="4.5"/>
+        <path d="M59.5 46v26L79 59z" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <text x="94" y="49" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-1">Miidia</text>
+
+    <!-- Platform Pill -->
+    <rect x="240" y="21" width="134" height="30" rx="15" fill="#1E1836" stroke="#4C3B8A" stroke-width="1.2"/>
+    <circle cx="257" cy="36" r="4.5" fill="#7EE2B8"/>
+    <text x="269" y="41" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.5" font-weight="700" fill="#DCD3FF">Android Auto</text>
+
+    <!-- Headline -->
+    <text x="0" y="128" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="31" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      YouTube, Stremio, Radio en Vivo
+    </text>
+    <text x="0" y="166" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="31" font-weight="800" fill="#C4B5FD" letter-spacing="-0.5">
+      y Web en la Pantalla de tu Coche.
+    </text>
+
+    <!-- Detailed Subtitle -->
+    <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="500" fill="#C3BDD9">
+      <text x="0" y="204">La app que transforma tu Android Auto en un verdadero centro</text>
+      <text x="0" y="226">multimedia, con acceso a YouTube, radios en vivo de todo el mundo</text>
+      <text x="0" y="248">y libre acceso a tus sitios favoritos en la pantalla de tu vehículo.</text>
+      <text x="0" y="274" fill="#9E96BA">Cuenta con control remoto desde el móvil y múltiples opciones de</text>
+      <text x="0" y="296" fill="#9E96BA">personalización: diseño, idioma, página de inicio, webs y radios favoritas.</text>
+    </g>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 326)" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700">
+      <rect x="0" y="0" width="152" height="36" rx="11" fill="#17132B" stroke="#352C5A" stroke-width="1.2"/>
+      <text x="76" y="23" fill="#E8EAED" text-anchor="middle">⚡ Sin Root / Sin PC</text>
+
+      <rect x="162" y="0" width="166" height="36" rx="11" fill="#17132B" stroke="#352C5A" stroke-width="1.2"/>
+      <text x="245" y="23" fill="#E8EAED" text-anchor="middle">📱 Control en el Móvil</text>
+
+      <rect x="338" y="0" width="144" height="36" rx="11" fill="#17132B" stroke="#352C5A" stroke-width="1.2"/>
+      <text x="410" y="23" fill="#E8EAED" text-anchor="middle">🌐 PT · EN · ES</text>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <g transform="translate(0, 394)" font-family="system-ui, -apple-system, 'Segoe UI', monospace" font-size="12.5" fill="#8E87AB">
+      <text x="0" y="16">📦 com.miidia.auto  ·  🎁 7 Días de Prueba Gratis  ·  🔄 Auto-Update Integrado</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Faithful Car Head-Unit Screen (ES) -->
+  <g transform="translate(566, 56)" filter="url(#shadow)">
+    <rect x="0" y="0" width="584" height="428" rx="24" fill="#07080A" stroke="#2A2D35" stroke-width="2.5"/>
+    <rect x="8" y="8" width="568" height="412" rx="17" fill="#000000"/>
+
+    <!-- LEFT RAIL -->
+    <line x1="66" y1="8" x2="66" y2="420" stroke="#191B1F" stroke-width="1.2"/>
+
+    <rect x="19" y="16" width="36" height="36" rx="9" fill="url(#logoGrad)"/>
+    <g fill="#FFFFFF" transform="translate(16.5, 13.5) scale(0.38)">
+      <circle cx="33" cy="35.5" r="4.5"/>
+      <rect x="28.5" y="43.5" width="9" height="31" rx="4.5"/>
+      <circle cx="47" cy="35.5" r="4.5"/>
+      <rect x="42.5" y="43.5" width="9" height="31" rx="4.5"/>
+      <path d="M59.5 46v26L79 59z" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+
+    <rect x="13" y="64" width="48" height="40" rx="12" fill="#1F2126"/>
+    <path d="M29 86.5 L37 79.5 L45 86.5 V93.5 H40 V88.5 H34 V93.5 H29 Z" fill="none" stroke="#F5B740" stroke-width="1.8" stroke-linejoin="round"/>
+
+    <circle cx="37" cy="133" r="8.5" fill="none" stroke="#B8BDC5" stroke-width="1.7"/>
+    <path d="M37 128.5 V133 L40 135" fill="none" stroke="#B8BDC5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(37, 179)" fill="none" stroke="#B8BDC5" stroke-width="1.6">
+      <circle cx="0" cy="0" r="3.2"/>
+      <circle cx="0" cy="0" r="6.8" stroke-dasharray="3.2 2.2"/>
+    </g>
+
+    <rect x="14" y="282" width="46" height="122" rx="12" fill="#07080A" stroke="#22252A" stroke-width="1.2"/>
+    <text x="37" y="311" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#F2F3F5" text-anchor="middle">A+</text>
+    <line x1="14" y1="324" x2="60" y2="324" stroke="#22252A" stroke-width="1"/>
+    <text x="37" y="348" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#F5B740" text-anchor="middle">100%</text>
+    <line x1="14" y1="361" x2="60" y2="361" stroke="#22252A" stroke-width="1"/>
+    <text x="37" y="389" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#F2F3F5" text-anchor="middle">A−</text>
+
+    <!-- TOP BAR -->
+    <rect x="80" y="18" width="256" height="48" rx="13" fill="#0B0C0E" stroke="#22252A" stroke-width="1.2"/>
+    <circle cx="101" cy="40" r="5.5" fill="none" stroke="#F5B740" stroke-width="2"/>
+    <line x1="105.5" y1="44.5" x2="110" y2="49" stroke="#F5B740" stroke-width="2" stroke-linecap="round"/>
+    <text x="119" y="46" font-family="system-ui, sans-serif" font-size="13.5" font-weight="500" fill="#8C919A">Dirección o búsqueda...</text>
+    <rect x="296" y="24" width="34" height="36" rx="9" fill="#1A1C20"/>
+    <rect x="310.5" y="33" width="5" height="10" rx="2.5" fill="none" stroke="#E2E5E9" stroke-width="1.5"/>
+    <path d="M307.5 39.5 A5.5 5.5 0 0 0 318.5 39.5 M313 45 V48.5 M310 48.5 H316" fill="none" stroke="#E2E5E9" stroke-width="1.5" stroke-linecap="round"/>
+
+    <rect x="346" y="18" width="148" height="48" rx="13" fill="#0B0C0E" stroke="#22252A" stroke-width="1.2"/>
+    <text x="360" y="46" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800" fill="#F5B740" letter-spacing="1">TRIAL</text>
+    <text x="398" y="46" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#F2F3F5">Quedan 6 días</text>
+
+    <!-- LEFT BODY COLUMN -->
+    <text x="80" y="148" font-family="'Barlow Condensed', system-ui, -apple-system, sans-serif" font-size="68" font-weight="800" fill="#F5F6F8" letter-spacing="-1">23:28</text>
+    <text x="81" y="177" font-family="system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#E1E4E8">Viernes, 13 de</text>
+    <text x="81" y="198" font-family="system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#E1E4E8">noviembre</text>
+
+    <rect x="80" y="264" width="152" height="58" rx="13" fill="#F5B740"/>
+    <path d="M96 286 L106 293 L96 300 Z" fill="#141414"/>
+    <text x="114" y="289" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#141414">Reproducien...</text>
+    <text x="114" y="306" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#2A210B">Quiet Solitude - ...</text>
+    <rect x="195" y="274" width="30" height="38" rx="9" fill="#C99224"/>
+    <path d="M208 288 L213 293 L208 298" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="80" y="330" width="46" height="44" rx="11" fill="#17191D"/>
+    <path d="M97 346 H99.2 V358 H97 Z M109 346 V358 L100 352 Z" fill="#F2F3F5"/>
+    <rect x="133" y="330" width="46" height="44" rx="11" fill="#17191D"/>
+    <rect x="151" y="346" width="3.2" height="12" rx="1" fill="#F2F3F5"/>
+    <rect x="157.8" y="346" width="3.2" height="12" rx="1" fill="#F2F3F5"/>
+    <rect x="186" y="330" width="46" height="44" rx="11" fill="#17191D"/>
+    <path d="M213.8 346 H216 V358 H213.8 Z M204 346 V358 L213 352 Z" fill="#F2F3F5"/>
+
+    <!-- RIGHT BODY COLUMN -->
+    <text x="248" y="96" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800" fill="#9BA1AA" letter-spacing="1.4">FAVORITOS</text>
+    <text x="434" y="96" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#F5B740">★</text>
+    <text x="447" y="96" font-family="system-ui, sans-serif" font-size="10.5" font-weight="500" fill="#9BA1AA">= barra superior (máx. 2)</text>
+
+    <!-- CARD 1: YouTube -->
+    <g transform="translate(248, 110)">
+      <rect x="0" y="0" width="152" height="134" rx="14" fill="#0D0F12" stroke="#22252A" stroke-width="1.2"/>
+      <rect x="14" y="14" width="44" height="44" rx="11" fill="url(#ytGrad)"/>
+      <text x="36" y="43" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">Y</text>
+      <path d="M128 23 L130.6 28.3 L136.5 29.1 L132.2 33.2 L133.2 39 L128 36.2 L122.8 39 L123.8 33.2 L119.5 29.1 L125.4 28.3 Z" fill="#F5B740"/>
+      <text x="14" y="94" font-family="system-ui, sans-serif" font-size="15.5" font-weight="800" fill="#F2F3F5">YouTube</text>
+      <text x="14" y="114" font-family="system-ui, sans-serif" font-size="12" fill="#8C919A">youtube.com</text>
+    </g>
+
+    <!-- CARD 2: Stremio -->
+    <g transform="translate(410, 110)">
+      <rect x="0" y="0" width="152" height="134" rx="14" fill="#0D0F12" stroke="#22252A" stroke-width="1.2"/>
+      <rect x="14" y="14" width="44" height="44" rx="11" fill="url(#stremioGrad)"/>
+      <text x="36" y="43" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">S</text>
+      <path d="M128 23 L130.6 28.3 L136.5 29.1 L132.2 33.2 L133.2 39 L128 36.2 L122.8 39 L123.8 33.2 L119.5 29.1 L125.4 28.3 Z" fill="none" stroke="#8C919A" stroke-width="1.6" stroke-linejoin="round"/>
+      <text x="14" y="94" font-family="system-ui, sans-serif" font-size="15.5" font-weight="800" fill="#F2F3F5">Stremio</text>
+      <text x="14" y="114" font-family="system-ui, sans-serif" font-size="12" fill="#8C919A">web.stremio.com</text>
+    </g>
+
+    <!-- CARD 3: Radio -->
+    <g transform="translate(248, 254)">
+      <rect x="0" y="0" width="152" height="134" rx="14" fill="#0D0F12" stroke="#22252A" stroke-width="1.2"/>
+      <rect x="14" y="14" width="44" height="44" rx="11" fill="#FFFFFF"/>
+      <line x1="28" y1="28" x2="42" y2="22" stroke="#8C919A" stroke-width="2" stroke-linecap="round"/>
+      <rect x="24" y="28" width="24" height="16" rx="3.5" fill="#E53935"/>
+      <circle cx="41" cy="36" r="4" fill="#FFFFFF"/>
+      <rect x="27" y="32" width="6" height="2" rx="1" fill="#FFFFFF"/>
+      <rect x="27" y="36" width="6" height="2" rx="1" fill="#FFFFFF"/>
+      <path d="M128 23 L130.6 28.3 L136.5 29.1 L132.2 33.2 L133.2 39 L128 36.2 L122.8 39 L123.8 33.2 L119.5 29.1 L125.4 28.3 Z" fill="none" stroke="#8C919A" stroke-width="1.6" stroke-linejoin="round"/>
+      <text x="14" y="94" font-family="system-ui, sans-serif" font-size="15.5" font-weight="800" fill="#F2F3F5">Radio</text>
+      <text x="14" y="114" font-family="system-ui, sans-serif" font-size="12" fill="#8C919A">Emisoras en vivo</text>
+    </g>
+
+    <!-- CARD 4: Ajustes -->
+    <g transform="translate(410, 254)">
+      <rect x="0" y="0" width="152" height="134" rx="14" fill="#0D0F12" stroke="#22252A" stroke-width="1.2"/>
+      <rect x="14" y="14" width="44" height="44" rx="11" fill="#25282E"/>
+      <g transform="translate(36, 36)" fill="none" stroke="#FFFFFF" stroke-width="1.8">
+        <circle cx="0" cy="0" r="3.5"/>
+        <circle cx="0" cy="0" r="7.5" stroke-dasharray="3.5 2.4"/>
+      </g>
+      <text x="14" y="94" font-family="system-ui, sans-serif" font-size="15.5" font-weight="800" fill="#F2F3F5">Ajustes</text>
+      <text x="14" y="114" font-family="system-ui, sans-serif" font-size="12" fill="#8C919A">Escala, barra, inicio</text>
+    </g>
+  </g>
+</svg>

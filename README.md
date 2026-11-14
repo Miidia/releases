@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Miidia — Media Browser for Android Auto" width="100%" />
+<img src="assets/banner-pt.svg" alt="Miidia — Central Multimídia para Android Auto" width="100%" />
 
 <br />
 
@@ -21,7 +21,7 @@
 
 # 🇧🇷 Português
 
-**Miidia** é um navegador de mídia completo projetado especificamente para o **Android Auto**. Assista a vídeos do **YouTube**, **Stremio**, ouça **Rádios ao vivo do mundo inteiro** e acesse seus **sites favoritos** diretamente na multimídia do seu veículo e no painel de instrumentos (**Virtual Cockpit**), com interface automotiva dedicada, controle remoto pelo celular e **ativação automática sem precisar de Root, PC ou Shizuku**.
+**Miidia** é o app que transforma seu **Android Auto** em uma verdadeira central multimídia, com acesso ao **YouTube**, **Stremio**, **Rádios ao vivo do mundo inteiro** e livre acesso aos seus **sites favoritos** direto na tela multimídia do seu veículo e no painel de instrumentos (**Virtual Cockpit**). O app conta com **controle remoto pelo celular** e diversas opções de preferência e personalização, como **visual, idioma, página inicial (home page), páginas e rádios favoritas** — tudo com ativação direta sem precisar de Root, PC ou Shizuku.
 
 ### ⬇️ Download Direto
 👉 **[Baixar a última versão · Download latest (`miidia.apk`)](https://github.com/Miidia/releases/releases/latest/download/miidia.apk)**
@@ -196,7 +196,13 @@ Siga estas verificações na ordem abaixo:
 
 # 🇺🇸 English
 
-**Miidia** is a full-featured media browser purpose-built for **Android Auto**. Watch **YouTube**, **Stremio**, listen to **live radio stations worldwide**, and browse your **favorite websites** right on your car's infotainment screen and digital instrument cluster (**Virtual Cockpit**) — featuring a dedicated automotive UI, phone remote control, and **one-tap self-activation with no Root, PC, or Shizuku required**.
+<div align="center">
+  <img src="assets/banner-en.svg" alt="Miidia — Multimedia Center for Android Auto" width="100%" />
+</div>
+
+<br />
+
+**Miidia** is the app that transforms your **Android Auto** into a true multimedia center, offering access to **YouTube**, **Stremio**, **live radio stations worldwide**, and free access to your **favorite websites** right on your vehicle's display and digital instrument cluster (**Virtual Cockpit**). It features **phone remote control** and rich customization options — including **visual themes, language, home page, favorite sites, and radio stations** — with one-tap self-activation and no Root, PC, or Shizuku required.
 
 ### ⬇️ Direct Download
 👉 **[Download latest version (`miidia.apk`)](https://github.com/Miidia/releases/releases/latest/download/miidia.apk)**
@@ -284,7 +290,13 @@ Please follow these steps in order:
 
 # 🇪🇸 Español
 
-**Miidia** es un navegador multimedia completo diseñado específicamente para **Android Auto**. Disfruta de **YouTube**, **Stremio**, **emisoras de radio en vivo de todo el mundo** y tus **sitios web favoritos** directamente en la pantalla de tu coche y en el cuadro de instrumentos digital (**Virtual Cockpit**), con interfaz automotriz dedicada, control remoto desde el móvil y **activación directa en 1 toque sin Root, PC ni Shizuku**.
+<div align="center">
+  <img src="assets/banner-es.svg" alt="Miidia — Centro Multimedia para Android Auto" width="100%" />
+</div>
+
+<br />
+
+**Miidia** es la aplicación que transforma tu **Android Auto** en un verdadero centro multimedia, con acceso a **YouTube**, **Stremio**, **emisoras de radio en vivo de todo el mundo** y libre acceso a tus **sitios web favoritos** directamente en la pantalla de tu vehículo y en el cuadro de instrumentos digital (**Virtual Cockpit**). Cuenta con **control remoto desde el móvil** y diversas opciones de preferencia y personalización — como **diseño visual, idioma, página de inicio, páginas y radios favoritas** — con activación directa sin necesidad de Root, PC ni Shizuku.
 
 ### ⬇️ Descarga Directa
 👉 **[Descargar la última versión (`miidia.apk`)](https://github.com/Miidia/releases/releases/latest/download/miidia.apk)**
