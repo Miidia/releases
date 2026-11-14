@@ -10,7 +10,7 @@
 
 [![Download APK](https://img.shields.io/badge/⬇_Baixar_Última_Versão_(miidia.apk)-v1.11.0-7C3AED?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Miidia/releases/releases/latest/download/miidia.apk)
 [![All Releases](https://img.shields.io/badge/Versões-Releases-4F46E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Miidia/releases/releases)
-[![No Root](https://img.shields.io/badge/Root_/_Shizuku-Não_Necessário-10B981?style=for-the-badge)](#)
+[![Free Trial](https://img.shields.io/badge/Teste_Grátis-7_Dias-10B981?style=for-the-badge)](#)
 [![Languages](https://img.shields.io/badge/Idiomas-PT_·_EN_·_ES-3B82F6?style=for-the-badge)](#)
 
 </div>
@@ -43,9 +43,19 @@
 
 ---
 
+## 📱 Compatibilidade de Dispositivos
+
+| Dispositivo / Sistema | Status | Observações |
+| :--- | :--- | :--- |
+| **Samsung com One UI 8.5+** | ✅ **Totalmente Compatível** | Amplamente testado e homologado em dispositivos Samsung atualizados com **One UI 8.5 ou superior**. |
+| **Samsung com One UI 8.0 ou inferior** | ❌ **Incompatível** | O aplicativo **não funciona** em aparelhos Samsung rodando One UI 8.0 ou versões anteriores. |
+| **Outras marcas Android** | ⚠️ **Não Homologado (Teste Livre)** | Ainda não foi testado oficialmente em outras marcas, portanto não há garantia prévia de funcionamento. No entanto, você pode **instalar e testar gratuitamente por 7 dias** seguindo exatamente o mesmo processo de instalação abaixo. |
+
+---
+
 ## 📲 Guia de Instalação Passo a Passo (15 Telas)
 
-Você **não precisa de computador, ADB, Shizuku nem Root**. Como o Miidia é instalado fora da Play Store e precisa habilitar o reconhecimento nativo no **Android Auto**, siga os **15 passos ilustrados** abaixo (leva menos de 1 minuto!):
+Você **não precisa de computador, ADB, Shizuku nem Root**. Siga os **15 passos ilustrados** abaixo com atenção (leva menos de 1 minuto!):
 
 ### Parte 1 — Download e Primeira Instalação (Passos 1 a 6)
 
@@ -92,8 +102,8 @@ Você **não precisa de computador, ADB, Shizuku nem Root**. Como o Miidia é in
   <tr>
     <td align="center" width="33%" valign="top">
       <img src="assets/install/step-7.jpg" width="240" alt="Passo 7" /><br />
-      <b>Passo 7 — Permissão de Velocidade</b><br />
-      <sub>Toque em <b>Durante o uso do app</b> para permitir que o Miidia identifique quando o veículo está estacionado.</sub>
+      <b>Passo 7 — Permissão do Aplicativo</b><br />
+      <sub>Toque em <b>Durante o uso do app</b> para que todas as features do app funcionem corretamente.</sub>
     </td>
     <td align="center" width="33%" valign="top">
       <img src="assets/install/step-8.jpg" width="240" alt="Passo 8" /><br />
@@ -152,45 +162,30 @@ Você **não precisa de computador, ADB, Shizuku nem Root**. Como o Miidia é in
 
 ---
 
-## 🔑 Teste Gratuito e Licenciamento
+## 🔑 Teste Gratuito de 7 Dias e Licenciamento
 
-- ** Avaliação Gratuita:** O período de teste gratuito começa automaticamente na primeira vez que o aplicativo se conecta. Reinstalar ou atualizar o app não reinicia nem perde o seu período de teste.
+- **7 Dias de Teste Grátis:** O período de avaliação gratuita de **7 dias** começa automaticamente na primeira vez que o aplicativo se conecta. Reinstalar ou atualizar o app não reinicia nem perde o seu período de teste.
 - **Funcionamento Offline:** Após verificado, o app funciona mesmo sem sinal de internet na estrada (até 24h em modo avaliação e até **7 dias offline** com licença ativa, renovando automaticamente sempre que houver conexão).
 - **Como Desbloquear / Comprar Licença:**
   No aplicativo do celular, abra a aba **Desbloquear / Licença** na barra inferior e toque em **Comprar licença** para ver os canais oficiais de atendimento (**E-mail** e **Telegram**), ou toque em **Ativar ou restaurar licença** caso já possua sua chave `MIID-XXXX-XXXX-XXXX-XXXX`.
 
 ---
 
-## 🛡️ Verificação de Segurança e Assinatura Oficial
-
-Este repositório hospeda exclusivamente os binários oficiais de distribuição e o manifesto de auto-atualização (`version.json`) do **Miidia**. Todos os APKs oficiais são assinados com a chave privada de lançamento do projeto:
-
-```text
-Proprietário : CN=James M, OU=Miidia, O=Miidia, L=Brazil, ST=Sao Paulo, C=BR
-SHA-256      : 216e29208743d7ab52ff2b71da9e1ab3dfbd97a836c6dbed97c267e505d3788d
-Pacote       : com.miidia.auto
-```
-
----
-
 ## ❓ Perguntas Frequentes (FAQ)
 
-<details>
-<summary><b>Por que o Miidia pede para "atualizar" a si mesmo na primeira abertura (Passos 8 a 14)?</b></summary>
+<details open>
+<summary><b>Concluí a instalação, mas o Miidia não apareceu no Android Auto do meu carro. O que devo fazer?</b></summary>
 <br />
-O Android Auto exige que aplicativos instalados fora da Play Store declarem origem de instalação compatível para aparecerem no painel do carro. Na primeira abertura, o Miidia faz uma auto-reinstalação rápida aplicando essa compatibilidade automaticamente — dispensando aplicativos externos, cabos no PC ou Shizuku.
-</details>
 
-<details>
-<summary><b>O som do vídeo está atrasado em relação à imagem no Bluetooth do carro. Como resolver?</b></summary>
-<br />
-Abra o Miidia no celular → seção <b>Personalização</b> → <b>Sincronização de áudio</b>. Toque em <i>"Fazer teste de sincronia no carro"</i> e ajuste o controle deslizante (+ ou − em passos de 10 ms) até que o som coincida perfeitamente com a imagem.
-</details>
+Siga estas verificações na ordem abaixo:
 
-<details>
-<summary><b>Como fazer login na minha conta do YouTube ou Stremio?</b></summary>
-<br />
-Por segurança e praticidade, as senhas são digitadas no celular: abra o Miidia no smartphone → <b>Personalização</b> → <b>Contas (Sign-ins)</b> → toque em <b>Entrar</b> ao lado do YouTube, Stremio ou do seu site favorito. Sua sessão será compartilhada automaticamente com a tela do carro.
+1. **Verifique o Acesso Rápido do Android Auto:** No seu celular, abra as configurações do **Android Auto** e procure a opção **Personalizar acesso rápido** (*Personalizar inicializador*). Se o **Miidia** estiver na lista mas desmarcado, habilite-o e reconecte o celular ao veículo.
+2. **Refaça a instalação com atenção aos detalhes:** Caso o Miidia não apareça na lista do Android Auto, **desinstale completamente o aplicativo** do celular e instale novamente seguindo o **processo de instalação passo a passo (Passos 1 a 15)** com cautela e atenção a cada detalhe — especialmente a etapa de ativação e atualização nos passos 8 a 14.
+3. **Verifique a versão do sistema do aparelho:** Se mesmo após reinstalar com atenção o aplicativo não aparecer, verifique se o sistema do seu celular está atualizado:
+   - **Aparelhos Samsung:** Certifique-se de que o dispositivo esteja rodando a **One UI 8.5 ou superior** (o app não funciona em One UI 8.0 ou inferior).
+   - **Outras marcas:** Garanta que o software do aparelho esteja na versão mais recente disponível.
+4. **Compatibilidade do modelo:** Caso todas as etapas acima tenham sido seguidas em um aparelho atualizado e o aplicativo ainda não funcione, é provável que o seu celular não seja compatível.
+
 </details>
 
 <br />
@@ -223,9 +218,19 @@ Por segurança e praticidade, as senhas são digitadas no celular: abra o Miidia
 
 ---
 
+## 📱 Device Compatibility
+
+| Device / OS Version | Status | Details |
+| :--- | :--- | :--- |
+| **Samsung with One UI 8.5+** | ✅ **Fully Compatible** | Extensively tested and verified on Samsung devices running **One UI 8.5 or newer**. |
+| **Samsung with One UI 8.0 or lower** | ❌ **Not Supported** | Does **not** work on Samsung devices running One UI 8.0 or earlier versions. |
+| **Other Android Brands** | ⚠️ **Untested (Free to Try)** | Not officially tested on other Android manufacturers, so compatibility cannot be guaranteed. However, you can **install and test it with the 7-day free trial** following the exact same installation steps. |
+
+---
+
 ## 📲 Step-by-Step Installation Guide (15 Screens)
 
-Follow the 15 visual screenshots above (under [Guia de Instalação Passo a Passo](#-guia-de-instalação-passo-a-passo-15-telas)):
+You **do not need a computer, ADB, Shizuku, or Root**. Carefully follow the **15 illustrated steps** above (under [Guia de Instalação Passo a Passo](#-guia-de-instalação-passo-a-passo-15-telas) — takes under 1 minute!):
 
 1. **Step 1:** Tap the download link for `miidia.apk` and confirm by tapping **Download** (*Baixar*).
 2. **Step 2:** Once downloaded, tap **Open file** (*Abrir arquivo*) in your browser notification.
@@ -233,7 +238,7 @@ Follow the 15 visual screenshots above (under [Guia de Instalação Passo a Pass
 4. **Step 4:** On the Google Play Protect prompt, tap **More details ⌄** (*Mais detalhes*).
 5. **Step 5:** Tap **Install anyway** (*Instalar assim mesmo*).
 6. **Step 6:** Once installed, tap **Open** (*Abrir*).
-7. **Step 7:** Grant location/car speed permission by choosing **While using the app** (*Durante o uso do app*) so Miidia knows when your car is parked.
+7. **Step 7:** Tap **While using the app** (*Durante o uso do app*) so that all app features work properly.
 8. **Step 8:** On the *"Enable in Android Auto"* prompt, tap the purple **Enable** (*Ativar*) button.
 9. **Step 9:** Android will open the *"Install unknown apps"* settings page for Miidia.
 10. **Step 10:** Toggle **Allow permission** (*Autorizar permissão*) ON and tap the **Back (‹)** arrow to return to Miidia.
@@ -242,6 +247,34 @@ Follow the 15 visual screenshots above (under [Guia de Instalação Passo a Pass
 13. **Step 13:** Tap **Install without scanning** (*Instalar sem análise*).
 14. **Step 14:** When *"App updated"* appears, tap **Open** (*Abrir*).
 15. **Step 15:** **All done! 🎉** Miidia is now unlocked and ready in your vehicle's Android Auto launcher!
+
+---
+
+## 🔑 7-Day Free Trial & Licensing
+
+- **7-Day Free Trial:** Your **7-day free trial** starts automatically the first time the app connects. Reinstalling or updating the app will not reset or lose your trial period.
+- **Offline Grace Period:** Once verified, the app continues working even without internet on the road (up to 24h in trial mode and up to **7 days offline** with an active license, automatically refreshing whenever connected).
+- **How to Unlock / Purchase a License:**
+  In the phone app, open the **Unlock / License** tab on the bottom bar and tap **Buy license** for official contact channels (**Email** and **Telegram**), or tap **Activate or restore license** if you already have your `MIID-XXXX-XXXX-XXXX-XXXX` key.
+
+---
+
+## ❓ Frequently Asked Questions (FAQ)
+
+<details open>
+<summary><b>I completed the installation, but Miidia did not appear on my car's Android Auto screen. What should I do?</b></summary>
+<br />
+
+Please follow these steps in order:
+
+1. **Check Android Auto Launcher Customization:** Open **Android Auto** settings on your phone and look for **Customize launcher** (*Personalizar acesso rápido*). If **Miidia** appears on the list unchecked, enable it and reconnect your phone to the car.
+2. **Reinstall carefully step by step:** If Miidia does not appear in the Android Auto list, **completely uninstall the app** from your phone and reinstall it following the **15-step installation guide** carefully and paying close attention to every detail (especially the activation and update steps 8–14).
+3. **Check your phone's software version:** If it still does not appear after a careful reinstall, check whether your device software is up to date:
+   - **Samsung devices:** Make sure your phone is running **One UI 8.5 or higher** (One UI 8.0 and lower are not supported).
+   - **Other brands:** Ensure your device is updated to the latest available system version.
+4. **Device compatibility:** If you have followed all the steps above on an up-to-date device and it still does not work, your phone model is likely not compatible.
+
+</details>
 
 <br />
 
@@ -273,9 +306,19 @@ Follow the 15 visual screenshots above (under [Guia de Instalação Passo a Pass
 
 ---
 
+## 📱 Compatibilidad de Dispositivos
+
+| Dispositivo / Sistema | Estado | Detalles |
+| :--- | :--- | :--- |
+| **Samsung con One UI 8.5+** | ✅ **Totalmente Compatible** | Ampliamente probado y verificado en dispositivos Samsung con **One UI 8.5 o superior**. |
+| **Samsung con One UI 8.0 o inferior** | ❌ **Incompatible** | La aplicación **no funciona** en dispositivos Samsung con One UI 8.0 o versiones anteriores. |
+| **Otras marcas Android** | ⚠️ **No Homologado (Prueba Libre)** | No ha sido probado oficialmente en otros fabricantes, por lo que no se garantiza su funcionamiento. Sin embargo, puedes **instalarlo y probarlo gratis durante 7 días** siguiendo exactamente el mismo proceso de instalación. |
+
+---
+
 ## 📲 Guía de Instalación Paso a Paso (15 Pantallas)
 
-Sigue las 15 capturas ilustradas más arriba (en [Guia de Instalação Passo a Passo](#-guia-de-instalação-passo-a-passo-15-telas)):
+**No necesitas ordenador, ADB, Shizuku ni Root**. Sigue con atención los **15 pasos ilustrados** más arriba (en [Guia de Instalação Passo a Passo](#-guia-de-instalação-passo-a-passo-15-telas) — ¡toma menos de 1 minuto!):
 
 1. **Paso 1:** Toca el enlace de descarga de `miidia.apk` y confirma tocando **Descargar** (*Baixar*).
 2. **Paso 2:** Al finalizar la descarga, toca **Abrir archivo** (*Abrir arquivo*) en el aviso inferior.
@@ -283,7 +326,7 @@ Sigue las 15 capturas ilustradas más arriba (en [Guia de Instalação Passo a P
 4. **Paso 4:** En el aviso de Google Play Protect, toca **Más detalles ⌄** (*Mais detalhes*).
 5. **Paso 5:** Toca **Instalar de todas formas** (*Instalar assim mesmo*).
 6. **Paso 6:** Una vez instalada la app, toca **Abrir**.
-7. **Paso 7:** Concede el permiso de ubicación/velocidad del coche eligiendo **Mientras la app está en uso** (*Durante o uso do app*).
+7. **Paso 7:** Toca **Mientras la app está en uso** (*Durante o uso do app*) para que todas las funciones de la aplicación funcionen correctamente.
 8. **Paso 8:** En la tarjeta *"Activar en Android Auto"*, toca el botón morado **Activar**.
 9. **Paso 9:** Se abrirá la pantalla *"Instalar apps desconocidas"* para Miidia.
 10. **Paso 10:** Activa el interruptor **Autorizar permiso** (*Autorizar permissão*) y toca la flecha **Atrás (‹)** para volver a Miidia.
@@ -292,6 +335,34 @@ Sigue las 15 capturas ilustradas más arriba (en [Guia de Instalação Passo a P
 13. **Paso 13:** Toca **Instalar sin analizar** (*Instalar sem análise*).
 14. **Paso 14:** Cuando aparezca *"Se actualizó la app"*, toca **Abrir**.
 15. **Paso 15:** **¡Todo listo! 🎉** Miidia ya está desbloqueada y aparecerá en el Android Auto de tu vehículo.
+
+---
+
+## 🔑 Prueba Gratuita de 7 Días y Licencias
+
+- **7 Días de Prueba Gratis:** El período de prueba gratuita de **7 días** comienza automáticamente la primera vez que se conecta la aplicación. Reinstalar o actualizar la app no reinicia ni pierde tu período de prueba.
+- **Funcionamiento Sin Conexión:** Una vez verificada, la app funciona incluso sin señal de internet en carretera (hasta 24h en modo prueba y hasta **7 días sin conexión** con licencia activa, renovándose automáticamente al conectarse).
+- **Cómo Desbloquear / Comprar Licencia:**
+  En la aplicación del móvil, abre la pestaña **Desbloquear / Licencia** en la barra inferior y toca **Comprar licencia** para ver los canales oficiales de atención (**Correo** y **Telegram**), o toca **Activar o restaurar licencia** si ya tienes tu clave `MIID-XXXX-XXXX-XXXX-XXXX`.
+
+---
+
+## ❓ Preguntas Frecuentes (FAQ)
+
+<details open>
+<summary><b>Completé la instalación, pero Miidia no apareció en el Android Auto de mi coche. ¿Qué debo hacer?</b></summary>
+<br />
+
+Sigue estas comprobaciones en orden:
+
+1. **Revisa el Acceso Rápido de Android Auto:** En tu móvil, abre los ajustes de **Android Auto** y busca la opción **Personalizar acceso rápido** (*Personalizar iniciador*). Si **Miidia** aparece en la lista desmarcado, actívalo y vuelve a conectar el teléfono al coche.
+2. **Reinstala con atención a cada detalle:** Si Miidia no aparece en la lista de Android Auto, **desinstala por completo la aplicación** del móvil y vuelve a instalarla siguiendo el **proceso de instalación paso a paso (Pasos 1 a 15)** con precaución y atención a cada detalle (especialmente los pasos de activación y actualización del 8 al 14).
+3. **Comprueba la versión del sistema del dispositivo:** Si tras reinstalar con cuidado sigue sin aparecer, verifica que tu móvil esté actualizado:
+   - **Dispositivos Samsung:** Asegúrate de contar con **One UI 8.5 o superior** (la app no funciona en One UI 8.0 o inferior).
+   - **Otras marcas:** Asegúrate de tener instalada la versión más reciente del sistema.
+4. **Compatibilidad del dispositivo:** Si has seguido todos los pasos anteriores en un dispositivo actualizado y aún no funciona, es probable que tu teléfono no sea compatible.
+
+</details>
 
 ---
 
