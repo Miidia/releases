@@ -1,6 +1,6 @@
 {
-  "versionCode": 22,
-  "versionName": "1.12.0",
-  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.12.0/miidia.apk",
-  "notes": "Versão 1.12.0 — Novo layout da página de Rádio nos visuais Cluster e Wave, com player fixo à esquerda e abas de Populares e Favoritas à direita."
+  "versionCode": 23,
+  "versionName": "1.12.1",
+  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.12.1/miidia.apk",
+  "notes": "Versão 1.12.1 — Botão ✕ na busca de Rádio para limpar o filtro e voltar às Populares, e aba Favoritas sempre visível."
 }
