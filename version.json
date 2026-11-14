@@ -1,6 +1,6 @@
 {
-  "versionCode": 23,
-  "versionName": "1.12.1",
-  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.12.1/miidia.apk",
-  "notes": "Versão 1.12.1 — Botão ✕ na busca de Rádio para limpar o filtro e voltar às Populares, e aba Favoritas sempre visível."
+  "versionCode": 24,
+  "versionName": "1.12.2",
+  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.12.2/miidia.apk",
+  "notes": "Versão 1.12.2 — Pequenas correções e melhorias."
 }

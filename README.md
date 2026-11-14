@@ -8,7 +8,7 @@
 
 <br />
 
-[![Download APK](https://img.shields.io/badge/⬇_Baixar_Última_Versão_(miidia.apk)-v1.12.1-7C3AED?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Miidia/releases/releases/latest/download/miidia.apk)
+[![Download APK](https://img.shields.io/badge/⬇_Baixar_Última_Versão_(miidia.apk)-v1.12.2-7C3AED?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Miidia/releases/releases/latest/download/miidia.apk)
 [![All Releases](https://img.shields.io/badge/Versões-Releases-4F46E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Miidia/releases/releases)
 [![Free Trial](https://img.shields.io/badge/Teste_Grátis-7_Dias-10B981?style=for-the-badge)](#)
 [![Languages](https://img.shields.io/badge/Idiomas-PT_·_EN_·_ES-3B82F6?style=for-the-badge)](#)
