@@ -1,6 +1,6 @@
 {
-  "versionCode": 21,
-  "versionName": "1.11.0",
-  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.11.0/miidia.apk",
-  "notes": "Versão 1.11.0 — Visual Cluster padrão, suporte ao Virtual Cockpit, controle do YouTube pelo celular, sincronia de áudio Bluetooth e suporte completo em Português, Inglês e Espanhol."
+  "versionCode": 22,
+  "versionName": "1.12.0",
+  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.12.0/miidia.apk",
+  "notes": "Versão 1.12.0 — Novo layout da página de Rádio nos visuais Cluster e Wave, com player fixo à esquerda e abas de Populares e Favoritas à direita."
 }
