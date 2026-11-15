@@ -1,6 +1,6 @@
 {
-  "versionCode": 28,
-  "versionName": "1.14.0",
-  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.14.0/miidia.apk",
-  "notes": "Versão 1.14.0 — Novo cartão de Compatibilidade com o Android Auto, com ajuda passo a passo."
+  "versionCode": 29,
+  "versionName": "1.14.1",
+  "apkUrl": "https://github.com/Miidia/releases/releases/download/v1.14.1/miidia.apk",
+  "notes": "Versão 1.14.1 — Player e botões de mídia reposicionados no visual Cluster."
 }
